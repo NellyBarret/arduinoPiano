@@ -15,13 +15,14 @@ void loop() {
     buttons_value[i] = digitalRead(buttons[i]);
     if(buttons_value[i] != 0) {
       digitalWrite(leds[i], HIGH);
+      Serial.write(buttons_value[i]);
       //delay(1000);
       //digitalWrite(leds[i], LOW);
       // Serial.print(buttons_value[i]);
       
     } else {
       digitalWrite(leds[i], LOW);
-      
+      Serial.write(buttons_value[i]);
     }
   }
 }
