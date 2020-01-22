@@ -36,11 +36,11 @@ void loop() {
       Serial.print(id);
       
       
-      if(allume == true) {
-        Serial.println(" est allume");
-      } else {
-        Serial.println(" est eteint");
-      }    
+      //if(allume == true) {
+      //  Serial.println(" est allume");
+      //} else {
+      //  Serial.println(" est eteint");
+      //}    
     }
   }
 
