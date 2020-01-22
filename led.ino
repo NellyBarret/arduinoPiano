@@ -3,6 +3,9 @@ const int buttons[] = {2, 3, 4, 5, 6, 7};
 int buttons_values[] = {0, 0, 0, 0, 0, 0};
 int buttons_values_prev[] = {0, 0, 0, 0, 0, 0};
 int incomingByte = 0; // for incoming serial data
+int indice = 0;
+int led = 0;
+byte myNumber = 0;
 
 void setup() {
   // initialisation du port serie
@@ -33,23 +36,25 @@ void loop() {
     }
     if(buttons_values_prev[j] != buttons_values[j]) {
       int id = j+1;
-      Serial.print(id);
-      
-      
-      //if(allume == true) {
-      //  Serial.println(" est allume");
-      //} else {
-      //  Serial.println(" est eteint");
-      //}    
+      Serial.print(id);  
     }
   }
 
-  //if (Serial.available() > 0) {
-  //  // read the incoming byte:
-  //  incomingByte = Serial.read();
-
-    // say what you got:
-  //  Serial.print("I received: ");
-  //  Serial.println(incomingByte, DEC);
-  //}
+  incomingByte = Serial.read();
+  if(incomingByte != -1 && incomingByte != 10) {
+    Serial.print("I received: ");
+    Serial.print(incomingByte, DEC);
+    Serial.print(" ");
+    int as_int = (int)incomingByte;
+    byte myNumber = incomingByte - '0';
+    Serial.println(myNumber);
+    indice = myNumber-1;
+    led = leds[indice];
+    if(led == HIGH) {
+      digitalWrite(led, LOW);
+    } else {
+      digitalWrite(led, HIGH);
+      delay(500);
+    }
+  }
 }
