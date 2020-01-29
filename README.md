@@ -4,7 +4,7 @@
 
 Nous avons construit un Piano Intelligent Connecté capable de continuer la suite d'une mélodie jouée par un utilisateur.
 
-La vidéo est disponible dans `PIC(1).mp4`.
+La vidéo est disponible dans `demoPIC.mp4`.
 
 ## Lancement du projet
 
