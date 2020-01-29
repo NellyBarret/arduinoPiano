@@ -1,0 +1,36 @@
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	height: 50px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	border: 0;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+.container {
+	width: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.btn {
+	font-size: 8pt;
+}
+.btn + .btn {
+	margin-top: 8px;
+}
+
+#header-container {
+	margin: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+h2 {
+	font-size: 28pt;
+	text-align: center;
+}
