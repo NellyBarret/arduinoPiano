@@ -21,7 +21,7 @@ socket.connect((hote, port))
 
 stop = False
 
-with serial.Serial('/dev/cu.usbmodem14201', 9600) as serial_port:
+with serial.Serial('/dev/cu.usbmodem142401', 9600) as serial_port:
     while not stop:
         if serial_port.inWaiting() > 0:
             b = serial_port.read()

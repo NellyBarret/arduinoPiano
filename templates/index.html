@@ -1,17 +1,16 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>App Compare</title>
-    <link rel="stylesheet" href="/arduinoPiano/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
-    <link rel="stylesheet" href="/arduinoPiano/static/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="/arduinoPiano/static/assets/fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="/arduinoPiano/static/assets/css/style.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/static/assets/css/style.css">
 </head>
 
 <style>
@@ -27,12 +26,12 @@
         <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">PIC</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         </div>
     </nav>
-    <header class="masthead" style="background:url('/arduinoPiano/static/assets/img/bg-pattern.png'), linear-gradient(to right, #7b4397, #dc2430);height:100%;">
+    <header class="masthead" style="background:url('/static/assets/img/bg-pattern.png'), linear-gradient(to right, #7b4397, #dc2430);height:100%;">
         <div class="container h-100" id="header-container">
             <div class="row">
                 <div class="col-md-8 mx-auto">
                     <button onclick="less()"><-</button>
-                    <img src="/arduinoPiano/static/img/piano.png">
+                    <img src="/static/img/piano.png">
                     <button onclick="more()">-></button>
                 </div>
                 <div class="col-md-4 mx-auto">
@@ -60,7 +59,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.84/Tone.js"></script>
-    <script src="/arduinoPiano/static/Tonejs-Instruments.js"></script>
+    <script src="/static/Tonejs-Instruments.js"></script>
     <script>
         //create a synth and connect it to the master output (your speakers)
       var synth = new Tone.PolySynth(Tone.Synth).toMaster();
